@@ -432,6 +432,148 @@ section{padding:44px 80px}
 
 /* ── Orbs — más frías, más sutiles ── */
 .orb{opacity:.08!important;filter:blur(120px)!important}
+
+/* ════════════════════════════════════════════
+   ICONOS — ocultar globalmente
+════════════════════════════════════════════ */
+.ov-icon{display:none!important}
+.ctx-card .ico{display:none!important}
+.uni-card .u-ico{display:none!important}
+.act-ico{display:none!important}
+.ov-demo-btn .btn-ico{display:none!important}
+
+/* ════════════════════════════════════════════
+   MOBILE — smartphones ≤ 768px
+════════════════════════════════════════════ */
+@media(max-width:768px){
+
+  /* ── Layout base ── */
+  body{overflow:hidden}
+  section{padding:28px 20px;align-items:flex-start}
+  .cw{padding:0}
+
+  /* ── Dot nav ── */
+  #dotnav{right:10px;gap:8px}
+  .dot{width:5px;height:5px}
+  .dot-label{display:none}
+
+  /* ── Key hint ── */
+  #keyhint{display:none}
+
+  /* ── Progress ── */
+  #progress{height:2px}
+
+  /* ── Hero S0 ── */
+  #s0{align-items:center;justify-content:center}
+  .hero-eye{font-size:9px;letter-spacing:3px;padding:4px 12px;margin-bottom:14px}
+  .hero-title{
+    font-size:clamp(38px,13vw,64px)!important;
+    letter-spacing:-1.5px!important;
+    line-height:.92!important;
+    margin-bottom:16px;
+  }
+  .hero-sub{font-size:13px;margin-bottom:24px;max-width:100%}
+  .hero-badges{gap:7px;justify-content:center}
+  .hbadge{font-size:9px;padding:5px 12px}
+  .scroll-hint{bottom:16px;font-size:9px}
+  #carnot-hero-logo{max-width:140px!important;margin-top:16px}
+
+  /* ── Sección genérica header ── */
+  .sh1{
+    font-size:clamp(28px,9vw,44px)!important;
+    letter-spacing:-.5px!important;
+    line-height:.96!important;
+    margin-bottom:10px;
+  }
+  .slabel{font-size:9px;letter-spacing:3px;margin-bottom:10px}
+  .sbody{font-size:13px;margin-bottom:18px;line-height:1.6}
+
+  /* ── S1 · Contexto ── */
+  .ctx-grid{grid-template-columns:1fr!important;gap:10px}
+  .ctx-card{padding:18px 16px}
+  .ctx-card .num{font-size:30px}
+  .ctx-card .lbl{font-size:12px}
+  .ctx-card .desc{font-size:11px}
+
+  /* ── S2 · Activo ── */
+  .act-grid{grid-template-columns:1fr!important;gap:10px}
+  .act-card{padding:16px;gap:12px;flex-direction:column}
+  .act-card h3{font-size:15px}
+  .act-card p{font-size:12px}
+
+  /* ── S3 · Universo ── */
+  .uni-grid{grid-template-columns:repeat(2,1fr)!important;gap:9px}
+  .uni-card{padding:14px 12px}
+  .uni-card .u-ttl{font-size:12px!important}
+  .uni-card ul li{font-size:10px}
+
+  /* ── S4 · Átomo 3D ── */
+  #fw-wrap{
+    width:min(280px,70vw)!important;
+    height:min(280px,70vw)!important;
+  }
+  #fw-detail{padding:0 4px;min-height:50px}
+  .fwd-box{padding:12px 14px}
+  .fwd-pills{gap:5px}
+  .fwd-pill{font-size:10px;padding:4px 9px}
+
+  /* ── S4 · Prop grid (si visible) ── */
+  .prop-grid{grid-template-columns:1fr!important;gap:10px}
+  .prop-card{padding:18px}
+  .prop-card h3{font-size:15px}
+  .prop-card p{font-size:12px}
+
+  /* ── S5 · CTA ── */
+  .cta-big{
+    font-size:clamp(32px,10vw,52px)!important;
+    letter-spacing:-1px!important;
+    margin-bottom:12px;
+  }
+  .cta-p{font-size:13px;margin-bottom:24px;max-width:100%}
+  .cta-steps{flex-direction:column;align-items:center;gap:8px;margin-bottom:24px}
+  .cta-step{width:100%;max-width:280px;padding:14px 18px}
+  .cta-step .sn{font-size:24px}
+  .cta-step .sl{font-size:11px}
+  .cta-main-btn{font-size:12px;padding:13px 28px}
+
+  /* ── Overlay ── */
+  #overlay{padding:0}
+  #overlay-box{
+    max-width:100%!important;
+    width:100%!important;
+    min-height:100dvh;
+    border-radius:0!important;
+    padding:28px 20px 40px!important;
+  }
+  .ov-close{top:12px;right:12px;width:32px;height:32px;font-size:14px}
+  .ov-title{font-size:clamp(22px,7vw,30px)!important}
+  .ov-sub{font-size:13px}
+  .ov-body{font-size:13px;line-height:1.7}
+  .ov-stat-row{flex-direction:column;gap:10px}
+  .ov-stat{padding:12px 16px}
+  .ov-stat .n{font-size:22px}
+  .ov-list li{font-size:12.5px}
+  .ov-highlight{font-size:12.5px;padding:12px 14px}
+  .ov-demo-btn{padding:11px 16px;font-size:12px}
+  .ov-demo-btn .btn-title{font-size:12px}
+  .ov-demo-btn .btn-sub{font-size:10px}
+
+  /* ── Cine bars ── */
+  .cine-bar{height:4%}
+
+  /* ── Vimeo bg en mobile: reducir opacidad para legibilidad ── */
+  .vimeo-bg iframe{opacity:.4}
+  .bg-video-overlay{background:linear-gradient(to bottom,rgba(4,7,14,.7) 0%,rgba(4,7,14,.45) 50%,rgba(4,7,14,.75) 100%)}
+}
+
+/* ── Extra small: 390px y menos (iPhone SE, etc.) ── */
+@media(max-width:390px){
+  section{padding:22px 16px}
+  .hero-title{font-size:clamp(32px,12vw,52px)!important}
+  .sh1{font-size:clamp(24px,8vw,38px)!important}
+  .uni-grid{grid-template-columns:1fr!important}
+  .cta-big{font-size:clamp(28px,9vw,44px)!important}
+}
 </style>
 </head>
 <body>
