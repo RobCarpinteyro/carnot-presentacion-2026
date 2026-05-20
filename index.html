@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carnot Laboratorios · Ecosistema Digital 2026–2027</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -13,7 +13,7 @@
   --glass:rgba(255,255,255,0.05);--glass2:rgba(78,203,202,0.08);
 }
 html{scroll-behavior:smooth}
-body{font-family:'Nunito',sans-serif;background:var(--navy2);color:var(--white);overflow:hidden;height:100vh;width:100vw}
+body{font-family:'Source Sans 3',sans-serif;background:var(--navy2);color:var(--white);overflow:hidden;height:100vh;width:100vw}
 
 /* ── SCROLLER ─────────────────────────────── */
 #scroller{height:100vh;overflow-y:scroll;scroll-snap-type:y mandatory;scrollbar-width:none}
@@ -57,7 +57,7 @@ section.active .reveal,section.active .reveal-l,section.active .reveal-r,section
 .sbody{font-size:15px;font-weight:300;color:var(--body);line-height:1.8;max-width:600px;margin-bottom:32px}
 
 /* ── BTN BASE ─────────────────────────────── */
-.btn{cursor:pointer;transition:all .25s;border:none;font-family:'Nunito',sans-serif}
+.btn{cursor:pointer;transition:all .25s;border:none;font-family:'Source Sans 3',sans-serif}
 .card-btn{cursor:pointer;transition:border-color .25s,background .25s,transform .2s}
 .card-btn:hover{border-color:rgba(78,203,202,.4)!important;background:rgba(78,203,202,.07)!important;transform:translateY(-2px)}
 .card-btn:active{transform:scale(.98)}
@@ -131,7 +131,7 @@ summary.ov-toggle::after{content:'↓ ver contexto completo';margin-left:4px;fon
 .ov-sources a:hover{color:var(--teal);text-decoration:underline}
 .ov-demo{margin-top:28px;padding-top:20px;border-top:1px solid rgba(78,203,202,.2);display:flex;flex-direction:column;gap:10px}
 .ov-demo-label{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(78,203,202,.6);margin-bottom:4px}
-.ov-demo-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(90deg,rgba(78,203,202,.12),rgba(78,203,202,.06));border:1px solid rgba(78,203,202,.3);border-radius:12px;padding:13px 20px;text-decoration:none;color:var(--white);font-family:'Nunito',sans-serif;font-size:13px;font-weight:600;transition:all .25s;cursor:pointer}
+.ov-demo-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(90deg,rgba(78,203,202,.12),rgba(78,203,202,.06));border:1px solid rgba(78,203,202,.3);border-radius:12px;padding:13px 20px;text-decoration:none;color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:13px;font-weight:600;transition:all .25s;cursor:pointer}
 .ov-demo-btn:hover{background:linear-gradient(90deg,rgba(78,203,202,.22),rgba(78,203,202,.12));border-color:var(--teal);transform:translateY(-1px);box-shadow:0 8px 24px rgba(78,203,202,.15)}
 .ov-demo-btn .btn-ico{font-size:18px;flex-shrink:0}
 .ov-demo-btn .btn-txt{display:flex;flex-direction:column;gap:1px}
@@ -291,13 +291,13 @@ section>*:not(.bg-canvas):not(.orb):not(.bg-video):not(.bg-video-overlay):not(.v
 .cta-step{background:var(--glass);border:1px solid rgba(78,203,202,.18);border-radius:14px;padding:18px 22px;width:190px}
 .cta-step .sn{font-size:30px;font-weight:800;color:var(--teal);margin-bottom:4px}
 .cta-step .sl{font-size:11.5px;color:var(--body);line-height:1.5}
-.cta-main-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(90deg,var(--teal),#36b0af);color:var(--navy2);font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;letter-spacing:.5px;padding:15px 34px;border-radius:100px;border:none;cursor:pointer;transition:all .3s;text-transform:uppercase}
+.cta-main-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(90deg,var(--teal),#36b0af);color:var(--navy2);font-family:'Source Sans 3',sans-serif;font-size:13px;font-weight:700;letter-spacing:.5px;padding:15px 34px;border-radius:100px;border:none;cursor:pointer;transition:all .3s;text-transform:uppercase}
 .cta-main-btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(78,203,202,.3)}
 
 /* ════════════════════════════════════════════
    DESIGN OVERRIDE — Editorial Futurista 2026
 ════════════════════════════════════════════ */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&display=swap');
+/* Source Sans 3 loaded via <link> in <head> */
 
 :root{
   --navy2:#04070E;
@@ -313,7 +313,7 @@ section{padding:44px 80px}
 
 /* ── Labels en corchetes ── */
 .slabel{
-  font-family:'Barlow Condensed',sans-serif;
+  font-family:'Source Sans 3',sans-serif;
   font-size:11px;font-weight:700;letter-spacing:4px;
   text-transform:uppercase;color:rgba(78,203,202,.6);
   margin-bottom:16px;
@@ -323,7 +323,7 @@ section{padding:44px 80px}
 
 /* ── Section headers ── */
 .sh1{
-  font-family:'Barlow Condensed',sans-serif!important;
+  font-family:'Source Sans 3',sans-serif!important;
   font-size:clamp(48px,6.5vw,82px)!important;
   font-weight:900!important;
   letter-spacing:-1px!important;
@@ -334,7 +334,7 @@ section{padding:44px 80px}
 
 /* ── Hero ── */
 .hero-title{
-  font-family:'Barlow Condensed',sans-serif!important;
+  font-family:'Source Sans 3',sans-serif!important;
   font-size:clamp(68px,12vw,140px)!important;
   font-weight:900!important;
   letter-spacing:-3px!important;
@@ -342,7 +342,7 @@ section{padding:44px 80px}
   text-transform:uppercase;
 }
 .hero-eye{
-  font-family:'Barlow Condensed',sans-serif;
+  font-family:'Source Sans 3',sans-serif;
   font-size:13px;letter-spacing:6px;
   color:rgba(255,255,255,.35);
   border:1px solid rgba(255,255,255,.1);
@@ -364,7 +364,7 @@ section{padding:44px 80px}
 
 /* ── CTA Section ── */
 .cta-big{
-  font-family:'Barlow Condensed',sans-serif!important;
+  font-family:'Source Sans 3',sans-serif!important;
   font-size:clamp(48px,8vw,110px)!important;
   font-weight:900!important;
   letter-spacing:-2px!important;
@@ -386,7 +386,7 @@ section{padding:44px 80px}
   transform:translateY(-3px)!important;
 }
 .act-card h3,.uni-card .u-ttl{
-  font-family:'Barlow Condensed',sans-serif;
+  font-family:'Source Sans 3',sans-serif;
   font-size:20px;font-weight:700;letter-spacing:.5px;
   text-transform:uppercase;
 }
@@ -400,7 +400,7 @@ section{padding:44px 80px}
 /* ── Universe cards ── */
 .uni-card{border-radius:4px!important}
 .u-ttl{
-  font-family:'Barlow Condensed',sans-serif!important;
+  font-family:'Source Sans 3',sans-serif!important;
   font-size:17px!important;font-weight:700!important;
   letter-spacing:.5px!important;text-transform:uppercase!important;
 }
@@ -412,7 +412,7 @@ section{padding:44px 80px}
   border:1px solid rgba(78,203,202,.15)!important;
 }
 .ov-title{
-  font-family:'Barlow Condensed',sans-serif!important;
+  font-family:'Source Sans 3',sans-serif!important;
   font-size:clamp(26px,3vw,38px)!important;
   font-weight:900!important;
   text-transform:uppercase;
@@ -422,7 +422,7 @@ section{padding:44px 80px}
 
 /* ── Scroll hint ── */
 .scroll-hint{
-  font-family:'Barlow Condensed',sans-serif;
+  font-family:'Source Sans 3',sans-serif;
   font-size:11px;letter-spacing:4px;
   color:rgba(255,255,255,.2);
 }
@@ -1908,7 +1908,7 @@ document.addEventListener('keydown',e=>{
       const zN=(eP.z+R)/(2*R);
       const labelAlpha=(isH||isS)?1:0.35+zN*0.65;
       const fs=Math.round(Math.max(10,12*Math.max(ePr.sc,0.65)));
-      ctx.font=`800 ${fs}px 'Nunito',sans-serif`;
+      ctx.font=`700 ${fs}px 'Source Sans 3',sans-serif`;
       ctx.fillStyle=`rgba(255,255,255,${labelAlpha})`;
       ctx.textAlign='center';
       const lpad=eR+11;
